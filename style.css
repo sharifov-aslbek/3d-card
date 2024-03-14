@@ -1,0 +1,238 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+}
+
+.container {
+        top: 70px;
+    width: 850px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 720px;
+}
+
+.box { 
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    perspective: 1000px;
+}
+
+.box.active {
+    display: block;
+}
+
+.box-content {
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid #5356FF;
+    padding: 15px;
+    
+}
+
+.container .box .box-content .title {
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #5D0E41;
+
+}
+
+
+.p {
+   text-align: center;
+   color: #5356FF;
+   font-family: monospace;
+   font-size: 20px;
+}
+
+
+.box-content .title {
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.box .box-content img {
+    /* position: absolute; */
+    width: 400px;
+    border-radius: 50%;
+}
+
+@keyframes rotateImg {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.box .box-content .btns .btn {
+    text-transform: uppercase;
+    border: none;
+    font-family: monospace;
+    font-size: 20px;
+    width: 200px;
+    background-color: #5356FF;
+    color:#DFF5FF;
+    cursor: pointer;
+}
+
+/* .btns .btn.active {
+    background-color: #2B2A4C;
+    color: #B31312;
+} */
+
+.btns .btnCn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btns .value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.btns .value .dicr {
+    background-color: #5356FF;
+    color: #DFF5FF;
+    border: none;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+}
+.btns .value .incr {
+    background-color: #5356FF;
+    color: #DFF5FF;
+    border: none;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+}
+
+.btns .value h3 {
+    color: #5356FF;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.box .box-content .buy {
+    background-color: #5356FF;
+    color: #DFF5FF;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+    padding: 10px 5px;
+}
+
+/* Two page */
+
+/* .box-content2 {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    border: 2px solid #416D19;
+    padding: 15px;
+}
+
+.container .box .box-content2 .title {
+    font-size: 25px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: silver;
+    font-family: monospace;
+
+}
+
+
+.box .box-content2 img {
+    position: absolute;
+    width: 400px;
+    border-radius: 50%;
+}
+
+.container .box .box-content2 .btns .btn {
+    text-transform: uppercase;
+    border: none;
+    font-family: monospace;
+    font-size: 20px;
+    width: 200px;
+    background-color: #114232;
+    color: #fff;
+    cursor: pointer;
+}
+
+.box .box-content2 .btns .btnCn .btn.active {
+   background-color: #fff;
+   color: black;
+   border: 2px solid black;
+   border-radius: 20px;
+}
+
+.btns .btnCn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btns .value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.box .box-content2 .btns .value .dicr {
+    background-color: #114232;
+    color: #fff;
+    border: none;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+}
+.box .box-content2 .btns .value .incr {
+    background-color: #114232;
+    color: #fff;
+    border: none;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+}
+
+.box .box-content2 .btns .value h3 {
+    color: #114232;
+    font-size: 20px;
+    font-family: monospace;
+}
+
+.box .box-content2 .buy {
+    background-color: #114232;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    font-size: 20px;
+} */
